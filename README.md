@@ -121,7 +121,7 @@ FAQ: 你需要使用非香港地区的代理才可以使用 TikTok, 这也是本
 
 Clash for Windows 去机场广告
 
-不提供完整打包, 你可以下载 [cfw-v0.19.10-noad-app.asar](https://github.com/smxl/500/raw/main/cfw-v0.19.10-noad-app.asar) 替换 resources/app.asar, 注意备份
+不提供完整打包, 你可以下载 [cfw-v0.19.10-noad-app.asar](https://github.com/smxl/500/raw/main/cfw-v0.19.10-noad-app.asar) 替换 resources/app.asar, 注意版本
 
 ## Clash
 
