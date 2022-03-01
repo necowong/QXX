@@ -4,9 +4,7 @@ Simple Config GeoIP for Quantumult X (QuantumultX) / Clash 预配置文件: Appl
 > + 整合多个 Quantumult X 重写配置, 利用 GeoIP 特性剔除大部分规则节省开销, 配合 Vercel 重定向精简规则和配置文件
 - [使用方法](https://github.com/smxl/500#使用方法)
 - [分流规则和重写](https://github.com/smxl/500#分流规则和重写)
-- [捷径](https://github.com/smxl/500#捷径)
 - [小工具](https://github.com/smxl/500#小工具)
-- [App](https://github.com/smxl/500#App)
 - [Clash](https://github.com/smxl/500#clash)
 - [配置文件更新](https://github.com/smxl/500#配置文件更新)
 - [推荐](https://github.com/smxl/500#推荐)
@@ -86,9 +84,19 @@ video|重写|https://cnn.vercel.app/xr-video|视频重写 3in1, 含 VIP 视频�
 
 FAQ: 你可以根据自己的情况调整上述规则和重写是否需要启用, 举例: 如果你很少使用海外软件, 那么 ```lk 重写 https://cnn.vercel.app/xr-lk 国外服务 Fake VIP``` 其中提供的多款软件的 VIP/Pro 解锁则对你无用 [其中部分重写已经失效], 同理如此 ```fake https://cnn.vercel.app/xr-fake Fake Pro 解锁``` 是该规则的精简
 
-## 捷径
+## 小工具
 
-因频道关闭不提供捷径
+演示效果:
+- https://cnn.vercel.app/archive/shu-ipa-hevc.mp4
+
+工具|作用|链接/补充
+-|-|-
+ipa 安装|通过 shu 安装名为 app.ipa 的旧版本应用|https://cnn.vercel.app/static/ https://cnn.vercel.app/static/
+V 视频|高可用解析|https://cnn.vercel.app/v?vv=视频地址 https://cnn.vercel.app/v.html?vv=视频地址 现已支持参数传入, 替换中文部分为网址即可使用
+快速搜索|设置 Safari 默认搜索引擎为 DuckDuckGo|默认谷歌, 前缀两个字母指定其他搜索引擎 Baidu:bd/Magi:mm/Twitter:tt/YouTube:yt/WolframAlpha:wa + 空格 + 关键词
+V 视频|高可用解析|https://v.im/
+
+因频道关闭不再提供捷径
 演示效果:
 - https://cnn.vercel.app/archive/apple-news-hevc.mp4
 - https://cnn.vercel.app/archive/vip-video-hevc.mp4
@@ -98,22 +106,6 @@ FAQ: 你可以根据自己的情况调整上述规则和重写是否需要启用
 Apple News QX|访问 Apple News 的捷径, 配合本配置文件
 Pade|捷径打开: 支付宝 [主扫 + 被扫 + 健康码], 云闪付 [被扫 + 乘车码], 微信 [主扫]
 VIP Free|生成 VIP 视频解析网址的捷径, 可配合电视浏览器 + 远程输入法使用
-
-## 小工具
-
-演示效果:
-- https://cnn.vercel.app/archive/shu-ipa-hevc.mp4
-
-工具|作用|链接/补充
--|-|-
-无需重写||
-ipa 安装|通过 shu 安装名为 app.ipa 的旧版本应用|https://cnn.vercel.app/static/ https://cnn.vercel.app/static/
-V 视频|高可用解析|https://cnn.vercel.app/v?vv=视频地址 https://cnn.vercel.app/v.html?vv=视频地址 现已支持参数传入, 替换中文部分为网址即可使用
-需要重写||
-快速搜索|设置 Safari 默认搜索引擎为 DuckDuckGo|默认谷歌, 前缀两个字母指定其他搜索引擎 Baidu:bd/Magi:mm/Twitter:tt/YouTube:yt/WolframAlpha:wa + 空格 + 关键词
-V 视频|高可用解析|https://v.im/
-
-## App
 
 因频道关闭不提供 ipa, 请自行抓包, [iOS旧版应用下载v5.1](https://wwx.lanzoui.com/iBE4Emzgbkj) 或 [Fiddler](https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe) + 关键词 bpu MZBuy.woa Google
 
@@ -126,6 +118,10 @@ TikTok 21.0.0.ipa 2.4.2022 实测可用
 启用 res 重写后, 这些软件有增强: 哔哩哔哩, 彩云天气, 微信, 百度网盘...
 
 FAQ: 你需要使用非香港地区的代理才可以使用 TikTok, 这也是本配置文件默认不启用香港节点的原因
+
+Clash for Windows 去机场广告
+
+不提供完整打包, 你可以下载 [cfw-v0.19.10-noad-app.asar](https://github.com/smxl/500/raw/main/cfw-v0.19.10-noad-app.asar) 替换 resources/app.asar, 注意备份
 
 ## Clash
 
